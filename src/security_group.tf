@@ -8,7 +8,7 @@ resource "aws_security_group" "main_vpc_sg" {
         from_port = -1
         to_port = -1
         protocol = "icmp"
-        cidr_blocks = [ var.var.second-region-cidr-block ]
+        cidr_blocks = [ var.second-region-cidr-block ]
     }
 
     ingress {
@@ -37,7 +37,7 @@ resource "aws_security_group" "second_vpc_sg" {
         from_port = -1
         to_port = -1
         protocol = "icmp"
-        cidr_blocks = [ var.var.main-region-cidr-block ]
+        cidr_blocks = [ var.main-region-cidr-block ]
     }
 
     egress {
