@@ -8,7 +8,7 @@ terraform {
   }
 }
 
-// We wil work on two region, that's why we are using two aws providers
+// We will work on two region, that's why we are using two aws providers
 provider "aws" {
     region = var.main-region-id
     alias = "main-region"
