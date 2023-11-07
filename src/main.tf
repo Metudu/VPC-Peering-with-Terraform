@@ -1,11 +1,5 @@
 terraform {
-  cloud {
-    organization = "Metudu"
 
-    workspaces {
-      name = "VPC-Training"
-    }
-  }
 }
 
 provider "aws" {
