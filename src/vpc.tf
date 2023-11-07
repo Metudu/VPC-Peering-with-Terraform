@@ -5,7 +5,6 @@ resource "aws_vpc" "main_vpc" {
     tags = {
       Name = var.main-vpc-name
     }
-    // We'll deploy this vpc in frankfurt(eu-central-1) and use it as our main vpc
 }
 
 resource "aws_vpc" "second_vpc" {
@@ -15,6 +14,4 @@ resource "aws_vpc" "second_vpc" {
     tags = {
       Name = var.second-vpc-name
     }
-    // Avoid using overlapping cidr blocks, otherwise it won't work!
-    // Also don't forget to select the second provider!
 }
